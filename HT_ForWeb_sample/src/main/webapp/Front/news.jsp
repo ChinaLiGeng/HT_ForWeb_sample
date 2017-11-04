@@ -1,3 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%><!DOCTYPE html>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
     <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
@@ -19,56 +20,21 @@
 		<![endif]-->
         
     <!-- Main CSS file -->
-        <link rel="stylesheet" href="css/owl.carousel.css" />
-        <link rel="stylesheet" href="css/magnific-popup.css" />
-        <link rel="stylesheet" href="css/font-awesome.css" />
         <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/responsive.css" />
 
 
         <link rel="stylesheet" href="external/bootstrap/css/bootstrap.css"/> <!-- CSS: Bootstrap -->
         <link rel="stylesheet" type="text/css" href="css-files/getCss.css" /> <!-- CSS: Our css :)  -->
-        <link rel="stylesheet" type="text/css" href="external/fancybox/jquery.fancybox-1.3.4.css" /> <!-- CSS: fancybox -->
-            
-        <!-- Google fonts -->    
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet">
             
         <!-- jQuery -->    
-        <script type="text/javascript" src="javascript/jquery.min.js"></script>    
+        <script type="text/javascript" src="js/jquery.min.js"></script>    
         <script type="text/javascript" src="external/jquery-ui-1.8.21.custom.min.js"></script>  <!-- JS: effects core + fold and clip -->   
         
-        <!-- external stuff -->    
-        <script type="text/javascript" src="javascript/custom.js"></script> <!-- JS: Our script :) -->
-        <script type="text/javascript" src="external/fancybox/jquery.fancybox-1.3.4.pack.js"></script> <!-- JS: fancybox - modal image-->
-        <script type="text/javascript" src="external/fx.js"></script> <!-- JS: jquery fx used for the bar animation -->
-        <script type="text/javascript" src="external/jquery.nicescroll.min.js"></script> <!-- JS: nicescroll - the nice scrolling bar from index -->
-        <script type="text/javascript" src="external/jquery.masonry.min.js"></script> <!-- JS: masonry - portofolio new tile script -->
-        
-        
-        <script type="text/javascript" src="external/nivo-slider/jquery.nivo.slider.pack.js"></script> <!-- JS: nivo slider -->
-        <link rel="stylesheet" type="text/css" href="external/nivo-slider/nivo-slider.css" /> <!-- CSS: nivo slider -->
-        
-        <script type="text/javascript" src="external/jquery.bxSlider/jquery.easing.1.3.js"></script> <!-- bx Slider -->
-        <script type="text/javascript" src="external/jquery.bxSlider/jquery.bxSlider.min.js"></script> <!-- bx Slider -->
-
         <!-- JS -->
-        <script type="text/javascript" src="js/jquery.min.js"></script><!-- jQuery -->
-        <script type="text/javascript" src="js/bootstrap.min.js"></script><!-- Bootstrap -->
-        <script type="text/javascript" src="js/jquery.parallax.js"></script><!-- Parallax -->
-        <script type="text/javascript" src="js/smoothscroll.js"></script><!-- Smooth Scroll -->
-        <script type="text/javascript" src="js/masonry.pkgd.min.js"></script><!-- masonry -->
-        <script type="text/javascript" src="js/jquery.fitvids.js"></script><!-- fitvids -->
-        <script type="text/javascript" src="js/owl.carousel.min.js"></script><!-- Owl-Carousel -->
-        <script type="text/javascript" src="js/jquery.counterup.min.js"></script><!-- CounterUp -->
-        <script type="text/javascript" src="js/waypoints.min.js"></script><!-- CounterUp -->
-        <script type="text/javascript" src="js/jquery.isotope.min.js"></script><!-- isotope -->
-        <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script><!-- magnific-popup -->
         <script type="text/javascript" src="js/scripts.js"></script><!-- Scripts -->
 
     </head>
     <body>
-
-        
 
         
         
@@ -86,17 +52,17 @@
                         <ul class="js-jquery-dropdown">
                             
                             <li >
-                                <a href="index708f.html?page=index">首页</a>
+                                <a href="index-demo.html#header">首页</a>
                             </li>
 
                             <li >
-                                <a href="indexe61e.html?page=page_services">新闻动态</a>
+                                <a href="news.html">新闻动态</a>
                             </li>
 
                             <!-- submenu -->
-                            <li class="sub_menu menu-selected">
-                                <a href="#">在线设计 <div class="sub_menu_arrow"></div></a>
-                                <ul>
+                            <li class="sub_menu  menu-selected">
+                                 <a href="onlineDesign.html">在线设计</a>
+                                <!-- <ul>
                                     <li >
                                         <a href="index3b26.html?page=page_portofolio_new">农房住宅</a>
                                         <div class="dropdown-separator"></div>
@@ -108,39 +74,33 @@
                                     <li class="menu-selected">
                                         <a href=" ">内装修设计</a>
                                     </li>
-                                </ul>
+                                </ul> -->
                             </li>
 
                             <li class="sub_menu">
-                                <a href="#">在线咨询 <div class="sub_menu_arrow"></div></a>
+                                <a href="onlineDec.html">在线咨询</a>
                                 <ul>
                                     <li >
-                                        <a href=" ">农房工业化优势</a>
+                                        <a href="onlineDec.html#part1">农房工业化优势</a>
                                         <div class="dropdown-separator"></div>
                                     </li>
                                     <li >
-                                        <a href=" ">建造过程解说等</a>
+                                        <a href="onlineDec.html#part2">建造过程解说等</a>
                                         <div class="dropdown-separator"></div>
                                     </li>
                                     <li class="menu-selected">
-                                        <a href="">在线咨询</a>
+                                        <a href="onlineDec.html#part3">在线咨询</a>
                                     </li>
                                 </ul>
                             </li>
                             
                             <li class="sub_menu">
-                                <a href="#">下载 <div class="sub_menu_arrow"></div></a>
-                                <ul>
-                                    <li >
-                                        <a href=" ">政策文件 <span class="label label-important">new</span></a>
-                                        <div class="dropdown-separator"></div>
-                                    </li>
-                                    <li >
-                                        <a href=" ">申请表等</a>
-                                    </li>
-                                </ul>
+                                <a href="Download.html">下载 </a>
                             </li>
                             
+                            <li class="sub_menu">
+                                <a href="index-demo.html#contact">联系方式</a>
+                            </li>
                         </ul>
                         
                     </div> <!-- /menu -->
@@ -209,7 +169,7 @@
                         <!-- .entry-content -->
                         <div class="entry-content">
                             <p>
-                                <img class="alignleft" src="images/page-blog/blog-img03.jpg" /><br/>
+                                <img class="alignleft" src="images/news/01.jpg" /><br/>
                             </p>
                             <p>
                                 此处填写新闻内容 文字半包围图片。以下内容均为示例。If you have a location available for shooting, I will come with the necessary lighting and equipment. When planning for location fashion photography, you should have in mind the time needed for the hair.
@@ -293,7 +253,7 @@
                         <!-- .entry-content -->
                         <div class="entry-content">
                             <p>
-                                <img class="alignleft" src="images/page-blog/blog-img03.jpg" /><br/>
+                                <img class="alignleft" src="images/news/01.jpg" /><br/>
                             </p>
                             <p>
                                 此处填写新闻内容 文字半包围图片。以下内容均为示例。If you have a location available for shooting, I will come with the necessary lighting and equipment. When planning for location fashion photography, you should have in mind the time needed for the hair.

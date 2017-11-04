@@ -1,134 +1,217 @@
-jQuery(document).ready(function () {
-  jQuery("#jquery-accordion-menu").jqueryAccordionMenu();
+jQuery(function($){
+
+'use strict';
+
+
+
+    // ----------------------------------------------
+    // Preloader
+    // ----------------------------------------------
+	(function () {
+	    $(window).load(function() {
+	        $('#pre-status').fadeOut();
+	        $('#st-preloader').delay(350).fadeOut('slow');
+	    });
+	}());
+
+
+
+    // ---------------------------------------------- 
+    //  magnific-popup
+    // ----------------------------------------------
+	(function () {
+
+		jQuery('.portfolio-items').magnificPopup({ 
+			delegate: 'a',
+			type: 'image',
+			// other options
+			closeOnContentClick: false,
+			closeBtnInside: false,
+			mainClass: 'mfp-with-zoom mfp-img-mobile',
+
+			gallery: {
+				enabled: false
+			},
+			zoom: {
+				enabled: true,
+				duration: 300, // don't foget to change the duration also in CSS
+				opener: function(element) {
+					return element.find('i');
+				}
+			}
+
+		});
+
+	}()); 
+
+
+
+    // ---------------------------------------------- 
+    // Fun facts
+    // ---------------------------------------------- 
+	(function () {
+		$('.st-counter').counterUp({
+		    delay: 10,
+		    time: 1500
+		});
+	}()); 
+
+
+
+    // ---------------------------------------------- 
+    //  Isotope Filter 
+    // ---------------------------------------------- 
+	(function () {
+		var winDow = $(window);
+		var $container=$('.portfolio-items');
+		var $filter=$('.filter');
+
+		try{
+			$container.imagesLoaded( function(){
+				$container.show();
+				$container.isotope({
+					filter:'*',
+					layoutMode:'masonry',
+					animationOptions:{
+						duration:750,
+						easing:'linear'
+					}
+				});
+			});
+		} catch(err) {
+		}
+
+		winDow.bind('resize', function(){
+			var selector = $filter.find('a.active').attr('data-filter');
+
+			try {
+				$container.isotope({ 
+					filter	: selector,
+					animationOptions: {
+						duration: 750,
+						easing	: 'linear',
+						queue	: false,
+					}
+				});
+			} catch(err) {
+			}
+			return false;
+		});
+
+		$filter.find('a').click(function(){
+			var selector = $(this).attr('data-filter');
+
+			try {
+				$container.isotope({ 
+					filter	: selector,
+					animationOptions: {
+						duration: 750,
+						easing	: 'linear',
+						queue	: false,
+					}
+				});
+			} catch(err) {
+
+			}
+			return false;
+		});
+
+
+		var filterItemA	= $('.filter a');
+
+		filterItemA.on('click', function(){
+			var $this = $(this);
+			if ( !$this.hasClass('active')) {
+				filterItemA.removeClass('active');
+				$this.addClass('active');
+			}
+		});
+	}()); 
+
+
+	// -------------------------------------------------------------
+    // masonry
+    // -------------------------------------------------------------
+
+    (function () {
+		var $container = $('.portfolio-items');
+		// initialize
+		$container.masonry({
+		  itemSelector: '.work-grid'
+		});
+    }());
+
+
+  	// -------------------------------------------------------------
+    // Animated scrolling / Scroll Up
+    // -------------------------------------------------------------
+
+    (function () {
+        $('li a[href*=#]').bind("click", function(e){
+            var anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $(anchor.attr('href')).offset().top -79
+            }, 1000);
+            e.preventDefault();
+        });
+    }());
+
+
+    // ----------------------------------------------
+    // Owl Carousel
+    // ----------------------------------------------
+	(function () {
+
+		$(".st-testimonials").owlCarousel({
+		singleItem:true,
+		lazyLoad : true,
+		pagination:false,
+		navigation : false,
+		autoPlay: true,
+		});
+
+	}());
+
+
+    // -------------------------------------------------------------
+    // Back To Top
+    // -------------------------------------------------------------
+
+    (function () {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 100) {
+                $('.scroll-up').fadeIn();
+            } else {
+                $('.scroll-up').fadeOut();
+            }
+        });
+    }());
+	
+
+    // ----------------------------------------------
+    // Parallax Scrolling
+    // ----------------------------------------------
+	(function () {
+		$(window).bind('load', function () {
+			parallaxInit();						  
+		});
+		function parallaxInit() {		
+			$("#testimonial").parallax("50%", 0.3);
+		}	
+		parallaxInit();
+	}());
+
+	
+
+    // ----------------------------------------------
+    // fitvids js
+    // ----------------------------------------------
+    (function () {
+
+        $(".post-video").fitVids();
+
+    }()); 
+
+
 });
 
-$(function(){
-//顶部导航切换
-//floors(1);
-$("#demo-list li").click(function(){
-  $("#demo-list li.active").removeClass("active")
-  $(this).addClass("active");
-})
-})
-
-
-
-function  inputs(num) {
-
-
-layui.use('layer', function(){
-var layer = layui.layer;
-layer.prompt(function(val, index){
-  if(num=='1'){
-  layer.msg('用地面积：'+val);
-  layer.close(index);
-  }
-  else {
-    layer.msg('楼层数：'+val);
-    layer.close(index);
-  
-
-  }
-}
-);
-
-});
-
-
-}
-
-
-
-function showimg(){
-$("#imgz").empty();
-disButton('button1');
-disButton('button2');
-console.log("showimg");
-$("#imgz").append(
-
-
-'<div style="  border:1px solid;flex:1;display:flex;flex-direction:row">'+
-  '<div class="layui-anim layui-anim-fadein" style=" border:1px solid;flex:1;" onClick=" HugeImg(1)" ><img src="./img/project/Unit_1.jpg" alt="方案1" height="100%" width="100%"/></div>'+
-  '<div class="layui-anim layui-anim-fadein" style=" border:1px solid;flex:1;" onClick=" HugeImg(2)"><img  src="./img/project/Unit_2.jpg" alt="方案2"  height="100%" width="100%"/></div>'+
-'</div>'+
-'<div style="border:1px solid;flex:1;display:flex;flex-direction:row">'+
-'<div class="layui-anim layui-anim-fadein" style=" border:1px solid;flex:1;" onClick=" HugeImg(3)"><img  src="./img/project/Unit_3.jpg" alt="方案3"  height="100%" width="100%"/></div>'+
-'<div class="layui-anim layui-anim-fadein" style="  border:1px solid;flex:1;" onClick=" HugeImg(4)"><img  src="./img/project/Unit_4.jpg" alt="方案4"  height="100%" width="100%"/></div>'+
-'</div>'
-);
-
-
-
-}
-function showElevation(){
-$("#imgz").empty();
-disButton('button1');
-disButton('button2');
-$("#imgz").append(
-
-
-'<div style="  border:1px solid;flex:1;display:flex;flex-direction:row">'+
-  '<div class="layui-anim layui-anim-fadein" style=" border:1px solid;flex:1;" onClick=" HugeImg(5)" ><img src="./img/project/Elevation_5.jpg" alt="立面图" height="100%" width="100%"/></div>'+
-  '<div class="layui-anim layui-anim-fadein" style=" border:1px solid;flex:1;" onClick=" HugeImg(6)"><img  src="./img/project/Elevation_6.jpg" alt="立面图"  height="100%" width="100%"/></div>'+
-'</div>'+
-'<div style="border:1px solid;flex:1;display:flex;flex-direction:row">'+
-'<div class="layui-anim layui-anim-fadein" style=" border:1px solid;flex:1;" onClick=" HugeImg(7)"><img  src="./img/project/Elevation_7.jpg" alt="立面图"  height="100%" width="100%"/></div>'+
-'<div class="layui-anim layui-anim-fadein" style="  border:1px solid;flex:1;" onClick=" HugeImg(8)"><img  src="./img/project/Elevation_8.jpg" alt="立面图"  height="100%" width="100%"/></div>'+
-'</div>'
-);
-
-
-
-}
-
-
-function HugeImg(val){
-$("#imgz").empty();
-
-if(val < 5){
-
-$("#imgz").append(
-'<div class="layui-anim layui-anim-fadein" style=" border:1px solid;flex:1; z-index:1"  ><img  src="./img/project/Unit_'+val+'.jpg" alt="方案'+val+'" height="100%" width="100%"/></div>'
-);
-enButton('button1');
-disButton('button2');
-}
-if(val >= 5){
-$("#imgz").append(
-  '<div class="layui-anim layui-anim-fadein" style=" border:1px solid;flex:1; z-index:1"  ><img  src="./img/project/Elevation_'+val+'.jpg" alt="立面图" height="100%" width="100%"/></div>'
-);
-enButton('button2');
-disButton('button1');
-}
-
-}
-function disButton(str){
-
-var obj = document.getElementById(str);
- //obj.className = "style2";
- obj.setAttribute("class", "no");
-}
-function enButton(str){
-var obj = document.getElementById(str);
- //obj.className = "style2";
- obj.setAttribute("class", "layui-btn layui-btn-radius layui-btn-warm float-button");
-}
-function returns(str){
-if (str==null) return ;
-disButton('button1');
-disButton('button2');
-if(str=='button1'){
-  showimg();
-}
-if(str=='button2') {
- showElevation();
-}
-}
-function Isometric_Diagram(){
-$("#imgz").empty();
-$("#imgz").append(
-
-  '<div class="layui-anim layui-anim-fadein" style=" border:1px solid;flex:1; z-index:1"  ><img  src="./img/project/Isometric_Diagram.jpg" alt="轴侧图" height="100%" width="100%"/></div>'
-);
-
-}
