@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%><!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,13 +40,13 @@
 	<!-- HEADER -->
 	<div class="container">
             <div class="row header">
-                <div class="span4">
+                <div class="hd-logo">
                      <!-- logo -->
-                    <a href="index708f.html?page=index">
+                    <a href="">
                         <img class="logo" src="images/header/logo.png" alt="" style="width:207px;"/>
                     </a>
                 </div>
-                <div class="span8">
+                <div class="hd-menu">
                     <!-- responsive dropdown menu -->
                     <div class="js-jquery-dropdown-wrapper">    
                         <ul class="js-jquery-dropdown">
@@ -61,7 +61,7 @@
 
                             <!-- submenu -->
                             <li class="sub_menu  menu-selected">
-                                 <a href="onlineDesign.html">在线设计 <div class="sub_menu_arrow"></div></a>
+                                 <a href="onlineDesign.html">在线设计 </a>
                                 <!-- <ul>
                                     <li >
                                         <a href="index3b26.html?page=page_portofolio_new">农房住宅</a>
@@ -117,14 +117,16 @@
 			<div class="carousel-inner">
 				<div class="item active" style="background-image: url(images/index/index-header/01.jpg)">
 					<div class="carousel-caption container">
+
 						<div class="row">
 							<div class="col-sm-7">
 								<br/><br/>
-								<p class="">宁波市农房工业化研究中心 </p>
-								<p class="">宁波工程学院</p>
-								<p class="">建工与交通工程学院大楼</p>
+								<h2>宁波市农房工业化研究中心 </h2>
+								<h1>宁波工程学院</h1>
+								<h2>建工与交通工程学院大楼</h2>
 							</div>
 						</div>
+						<img class="headerImg" src="images/index/headerImg.jpg"></img>
 					</div>					
 				</div>
 			</div>		
@@ -201,9 +203,9 @@
 					</div>
 						<div class="st-border"></div>
 						<ul>
-							<h4>宁波普利凯建筑科技</h4><h4>有限公司</h4>
+							<h4>宁波普利凯建筑科技<br/>有限公司</h4>
 							<br/>
-							<h9>Ningbo Preca Construction Technology </h9><h9>Co. LTD.</h9>
+							<p>Ningbo Preca Construction <br/>Technology Co. LTD.</p>
 						</ul>
 						<!-- <a href="" class="btn btn-send">Sign Up</a> -->
 					</div>
@@ -221,9 +223,9 @@
 					</div>
 						<div class="st-border"></div>
 						<ul>
-							<h4>宁波市富星电子</h4><h4>有限公司</h4>
+							<h4>宁波市富星电子<br/>有限公司</h4>
 							<br/>
-							<h9>Ningbo Fuxing Electronics</h9><br/><h9> Co. LTD.</h9>
+							<p>Ningbo Fuxing Electronics<br/>Co. LTD.</p>
 						</ul>
 						<!-- <a href="" class="btn btn-send">Sign Up</a> -->
 					</div>
@@ -241,9 +243,9 @@
 					</div>
 						<div class="st-border"></div>
 						<ul>
-							<h4>宁波中加低碳新技术</h4><h4>研究院有限公司</h4>
+							<h4>宁波中加低碳新技术<br/>研究院有限公司</h4>
 							<br/>
-							<h10>Ningbo Sino-Canada Low-Carbon Technology </h10><br/><h10>Research Institute Co. LTD.</h10>
+							<p>Ningbo Sino-Canada Low-Carbon<br/>Technology Co. LTD.</p>
 						</ul>
 						<!-- <a href="" class="btn btn-send">Sign Up</a> -->
 					</div>
@@ -349,7 +351,7 @@
 						</div>		
 					</div>
 					<div class="col-sm-6 our-office-img">
-						<div id="office-carousel" class="carousel slide" data-ride="carousel">			
+						<div id="office-carousel" class="carousel slide" data-ride="carousel" >			
 							<div class="carousel-inner">
 								<div class="item active">
 									<img src="images/index/index-caseShow/02.jpg" alt="">

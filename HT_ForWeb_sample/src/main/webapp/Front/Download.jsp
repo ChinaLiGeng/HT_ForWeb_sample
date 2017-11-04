@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%><!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
     <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
@@ -40,7 +40,7 @@
             <div class="row header">
                 <div class="span4">
                      <!-- logo -->
-                    <a href="index708f.html?page=index">
+                    <a href="">
                         <img class="logo" src="images/header/logo.png" alt="" style="width:207px;"/>
                     </a>
                 </div>
