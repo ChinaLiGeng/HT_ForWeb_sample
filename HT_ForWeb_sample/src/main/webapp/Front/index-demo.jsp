@@ -437,10 +437,21 @@
         <div class="container">
             <div class="row">
                 <!-- SOCIAL ICONS -->
-                <div class="col-sm-6 col-sm-push-6 footer-social-icons">
+                <div class="text-center">
+                   		<a href="index-demo.jsp#header">首页</a>
+                    
+                    |
+                        <a href="news.jsp">新闻动态</a>
+                    |
+                         <a href="onlineDesign.jsp">在线设计 </a>
+                    |
+                        <a href="onlineDec.jsp">在线咨询</a>
+                    |
+                        <a href="Download.jsp">下载 </a>
+                    <br/>
                 </div>
-                <!-- /SOCIAL ICONS -->
-                <div class="col-sm-6 col-sm-pull-6 copyright">
+                <div class="text-center">
+                	<p class=""><i class="fa fa-map-marker"></i> <strong> 地址： </strong> 宁波市江北区风华路 201号 宁波工程学院 建筑与交通工程学院大楼 B310</p>
                     <p>Copyright &copy; 2017.11.1 XXXX公司保留所有权利</p>
                 </div>
             </div>

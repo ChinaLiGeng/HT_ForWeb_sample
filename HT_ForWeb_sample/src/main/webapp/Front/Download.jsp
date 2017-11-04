@@ -40,7 +40,7 @@
             <div class="row header">
                 <div class="span4">
                      <!-- logo -->
-                    <a href="">
+                    <a href="index708f.html?page=index">
                         <img class="logo" src="images/header/logo.png" alt="" style="width:207px;"/>
                     </a>
                 </div>
@@ -49,17 +49,17 @@
                     <div class="js-jquery-dropdown-wrapper">    
                         <ul class="js-jquery-dropdown">
                             
-<li >
-                                <a href="index-demo.html#header">首页</a>
+							<li class="menu-selected">
+                                <a href="index-demo.jsp#header">首页</a>
                             </li>
 
                             <li >
-                                <a href="news.html">新闻动态</a>
+                                <a href="news.jsp">新闻动态</a>
                             </li>
 
                             <!-- submenu -->
-                            <li class="sub_menu  menu-selected">
-                                 <a href="onlineDesign.html">在线设计</a>
+                            <li class="sub_menu  ">
+                                 <a href="onlineDesign.jsp">在线设计</a>
                                 <!-- <ul>
                                     <li >
                                         <a href="index3b26.html?page=page_portofolio_new">农房住宅</a>
@@ -76,28 +76,28 @@
                             </li>
 
                             <li class="sub_menu">
-                                <a href="onlineDec.html">在线咨询</a>
+                                <a href="onlineDec.jsp">在线咨询</a>
                                 <ul>
                                     <li >
-                                        <a href="onlineDec.html#part1">农房工业化优势</a>
+                                        <a href="onlineDec.jsp#part1">农房工业化优势</a>
                                         <div class="dropdown-separator"></div>
                                     </li>
                                     <li >
-                                        <a href="onlineDec.html#part2">建造过程解说等</a>
+                                        <a href="onlineDec.jsp#part2">建造过程解说等</a>
                                         <div class="dropdown-separator"></div>
                                     </li>
                                     <li class="menu-selected">
-                                        <a href="onlineDec.html#part3">在线咨询</a>
+                                        <a href="onlineDec.jsp#part3">在线咨询</a>
                                     </li>
                                 </ul>
                             </li>
                             
                             <li class="sub_menu">
-                                <a href="Download.html">下载 </a>
+                                <a href="Download.jsp">下载 </a>
                             </li>
                             
                             <li class="sub_menu">
-                                <a href="index-demo.html#contact">联系方式</a>
+                                <a href="index-demo.jsp#contact">联系方式</a>
                             </li>
                             
                         </ul>
@@ -137,8 +137,7 @@
     <div class="row">
         <div class="span9">
             <h4>政策文件一</h4>
-            政策文件一简介 Ne prompta atomorum intellegat per. In dicit accusamus eum. Quo ex virtute tacimates. Ipsum corrumpit ullamcorper sea an, audiam alienum definitiones ea mea.
-            <br/><button  class="btn btn-small btn-white" href="#">查看全部</button>
+            政策文件一简介 Ne prompta atomorum intellegat per. In dicit accusamus eum. Quo ex virtute tacimates. Ipsum corrumpit ullamcorper sea an, audiam alienum definitiones ea mea. 
         </div>
         <div class="span1"> <br/></div>
          <div class="span2">
@@ -150,8 +149,7 @@
     <div class="row">
         <div class="span9">
             <h4>政策文件二</h4>
-            政策文件二简介 Ne prompta atomorum intellegat per. In dicit accusamus eum. Quo ex virtute tacimates. Ipsum corrumpit ullamcorper sea an, audiam alienum definitiones ea mea.
-            <br/><button  class="btn btn-small btn-white" href="#">查看全部</button>
+            政策文件二简介 Ne prompta atomorum intellegat per. In dicit accusamus eum. Quo ex virtute tacimates. Ipsum corrumpit ullamcorper sea an, audiam alienum definitiones ea mea. 
         </div>
         <div class="span1"> <br/></div>
          <div class="span2">
@@ -163,8 +161,7 @@
     <div class="row">
         <div class="span9">
             <h4>政策文件三</h4>
-            政策文件三简介 Ne prompta atomorum intellegat per. In dicit accusamus eum. Quo ex virtute tacimates. Ipsum corrumpit ullamcorper sea an, audiam alienum definitiones ea mea.
-            <br/><button  class="btn btn-small btn-white" href="#">查看全部</button>
+            政策文件三简介 Ne prompta atomorum intellegat per. In dicit accusamus eum. Quo ex virtute tacimates. Ipsum corrumpit ullamcorper sea an, audiam alienum definitiones ea mea. 
         </div>
         <div class="span1"> <br/></div>
          <div class="span2">
@@ -176,8 +173,7 @@
     <div class="row">
         <div class="span9">
             <h4>政策文件四</h4>
-            政策文件四简介 Ne prompta atomorum intellegat per. In dicit accusamus eum. Quo ex virtute tacimates. Ipsum corrumpit ullamcorper sea an, audiam alienum definitiones ea mea.
-            <br/><button  class="btn btn-small btn-white" href="#">查看全部</button>
+            政策文件四简介 Ne prompta atomorum intellegat per. In dicit accusamus eum. Quo ex virtute tacimates. Ipsum corrumpit ullamcorper sea an, audiam alienum definitiones ea mea. 
         </div>
          <div class="span1"> <br/></div>
          <div class="span2">
@@ -195,8 +191,7 @@
     <div class="row">
         <div class="span9">
             <h4>申请表一</h4>
-            Ne prompta atomorum intellegat per. In dicit accusamus eum. Quo ex virtute tacimates. Ipsum corrumpit ullamcorper sea an, audiam alienum definitiones ea mea.
-            <br/><button  class="btn btn-small btn-white" href="#">查看全部</button>
+            Ne prompta atomorum intellegat per. In dicit accusamus eum. Quo ex virtute tacimates. Ipsum corrumpit ullamcorper sea an, audiam alienum definitiones ea mea. 
         </div>
          <div class="span1"> <br/></div>
          <div class="span2">
@@ -209,7 +204,6 @@
         <div class="span9">
             <h4>申请表二</h4>
             Ne prompta atomorum intellegat per. In dicit accusamus eum. Quo ex virtute tacimates. Ipsum corrumpit ullamcorper sea an, audiam alienum definitiones ea mea.
-            <br/><button  class="btn btn-small btn-white" href="#">查看全部</button>
         </div>
          <div class="span1"> <br/></div>
          <div class="span2">
@@ -235,10 +229,21 @@
         <div class="container">
             <div class="row">
                 <!-- SOCIAL ICONS -->
-                <div class="col-sm-6 col-sm-push-6 footer-social-icons">
+                <div class="text-center">
+                        <a href="index-demo.jsp#header">首页</a>
+                    
+                    |
+                        <a href="news.jsp">新闻动态</a>
+                    |
+                         <a href="onlineDesign.jsp">在线设计 </a>
+                    |
+                        <a href="onlineDec.jsp">在线咨询</a>
+                    |
+                        <a href="Download.jsp">下载 </a>
+                    <br/>
                 </div>
-                <!-- /SOCIAL ICONS -->
-                <div class="col-sm-6 col-sm-pull-6 copyright">
+                <div class="text-center">
+                    <p class=""><i class="fa fa-map-marker"></i> <strong> 地址： </strong> 宁波市江北区风华路 201号 宁波工程学院 建筑与交通工程学院大楼 B310</p>
                     <p>Copyright &copy; 2017.11.1 XXXX公司保留所有权利</p>
                 </div>
             </div>
